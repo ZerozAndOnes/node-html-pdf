@@ -8,6 +8,10 @@
 
 ## Changelog
 
+### 3.0.2 Onwards
+Have a look at the releases page: https://github.com/ZerozAndOnes/node-html-pdf/releases
+
+### Pre 3.0.2
 Have a look at the releases page: https://github.com/marcbachmann/node-html-pdf/releases
 
 ## Installation
