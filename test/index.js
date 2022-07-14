@@ -258,3 +258,13 @@ test('allows local file access with localUrlAccess=true', function (t) {
     t.assert(count === 5, 'Renders a page 5 pages as the content is present')
   })
 })
+
+test('phantomjs exit without file generated does not cause crash', function (t) {
+  t.plan(2)
+
+  pdf.create(`<body>foo</body>`, { phantomPath: './test/phantomMock.js' })
+  .toBuffer(function (error, buffer) {
+    t.true(error instanceof Error)
+    t.false(buffer)
+  })
+})
