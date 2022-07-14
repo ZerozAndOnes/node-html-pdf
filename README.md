@@ -41,7 +41,7 @@ pdf.create(html, options).toFile('./businesscard.pdf', function(err, res) {
 
 ```js
 var pdf = require('html-pdf');
-pdf.create(html).toFile([filepath, ]function(err, res){
+pdf.create(html).toFile([filepath, ], function(err, res){
   console.log(res.filename);
 });
 
